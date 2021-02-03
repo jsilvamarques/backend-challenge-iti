@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  restapi:
+    container_name: restapi
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: restapi
+    ports:
+      - "8080:8080"
